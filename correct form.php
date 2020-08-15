@@ -16,6 +16,9 @@
 
 		if (!empty($lname) AND !empty($password) AND !empty($name) AND !empty($dob) AND !empty($color) AND !empty($email) AND !empty($dept) AND !empty($gender))
 		{
+			$_SESSION['lname'] = $lname;
+			$_SESSION["dept"] = $dept;
+			$_SESSION['dob'] = $dob;
 			$_SESSION['color'] = $color;
 			$_SESSION['email'] = $email;
 			$_SESSION['name'] = $name;
